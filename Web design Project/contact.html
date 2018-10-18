@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      
+    
+  </head>
+  <body>
+
+
+
+  <nav >
+<ul>
+
+<li><a href="main.html">HOME</a></li>
+<li><a href="aboutUs.html">BLOG</a></li>
+<li><a href="staffs.html">TEACHER/STAFF</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+  
+  
+  <div class="container">
+  
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+	<div class="contactInfo">
+      <h3 class="mt0"><b>JOIN US</b></h3>
+            <ul class="contact-info">
+               <span>Sport Auditorium 7th District, No.504-506 Huỳnh Tấn Phát street 
+			  Ho Chi Minh City, Vietnam</span><br /> 
+              <span>chungangkumdoclubvn@gmail.com</span><br /> 
+			  <a> Official Website:</a> <a href="http://www.wjkumdo.co.kr/"> www.wjkumdo.co.kr</a><br /> 
+              <span>+84-9026-83747</span><br /> 
+            </ul>
+	</div>
+	<div class ="clearfix"></div>
+  </div>
+</div>
+
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(10.741617,106.729764);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyB2NRh8AlvvQE6d0H4IlDi5yX806Pb55sY&callback=myMap"></script>
+
+  </body>
+  <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>CHUNG ANG Dojang</h3>
+
+				<p class="footer-links">
+					<a href="main.html">Home</a>
+					·
+					<a href="aboutUs.html">Blog</a>
+					·
+					<a href="staffs.html">Teacher/Staffs</a>
+					·
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">An Le &copy; 2018</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/chungangkendoclub/"target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/chungang_kendo/?hl=en"target="_blank"><i class="fa fa-instagram"></i></a>
+
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+
+			</div>
+
+		</footer>
